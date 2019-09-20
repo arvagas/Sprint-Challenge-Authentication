@@ -7,17 +7,17 @@ module.exports = {
 }
 
 function findBy(filter) {
-  db('users')
+  return db('users')
     .where(filter)
 }
 
 function findById(id) {
-  db('users')
+  return db('users')
     .where({ id })
 }
 
 function add(newObj) {
-  db('users')
+  return db('users')
     .insert(newObj, 'id')
     .then(idArr => findById(idArr[0]))
 }
