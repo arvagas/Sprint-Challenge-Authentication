@@ -39,12 +39,16 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is the purpose of using _sessions_?
+**Sessions is a way to persist data across requests. When a user leaves the website, or if the server restarts, the user does not have to log back in to continue accessing restricted parts of a site.**
 
 - [ ] What does bcrypt do to help us store passwords in a secure manner.
+**Bcyryt provides the developer the ability to hash stored passwords.**
 
 - [ ] What does bcrypt do to slow down attackers?
+**Bcrypt uses an algorithm that is known as a Key Derivation Function. It takes an inputted password and hashes it x amount of times. Attackers would need to have the hash, know the algorithm, and how many rounds it took to hash to be successful in obtaining a password.**
 
 - [ ] What are the three parts of the JSON Web Token?
+**Header, Payload, Signature**
 
 ## Minimum Viable Product
 
